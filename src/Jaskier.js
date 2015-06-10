@@ -55,7 +55,7 @@
         var that = this;
 
         var Child = function() {
-            // inherit after Jaskier Constructor
+            // inherit from Jaskier Constructor
             that.apply(this, arguments); 
             // add instanceObj props
             $.extend(this, instanceObj); 
