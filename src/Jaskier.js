@@ -18,9 +18,11 @@
         module.exports = factory(require('jquery'));
     } else {
         // Browser globals (root is window)
-        root.returnExports = factory(root.$);
+        root.Jaskier = factory(root.$);
     }
 }(this, function ($) {
+    var Jaskier = {}; 
+
     // helper functions
     var helper = {
         once: function(fn, cx) { 
@@ -51,10 +53,13 @@
 
     Jaskier.extend = function(obj) {
         var that = this;
+
+        // inherit after Jaskier Constructor
         var Child = function() {
             that.apply(this, arguments); 
         };
 
+        // copy from Jaskier prototype and from obj 
         Child.prototype = $.extend({}, that.prototype, obj);
 
         return Child;
@@ -133,9 +138,7 @@
     });
 
     // Just return a value to define the module export.
-    return {
-        Jaskier: Jaskier
-    };
+    return Jaskier;
 }));
 
 
