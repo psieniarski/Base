@@ -1,5 +1,5 @@
-# Base
-My own tiny js framework ;-)
+# JaSkier
+Tiny js framework ;-)
 Works well with *browserify*.
 
 Inspired by Marionette (http://marionettejs.com)
