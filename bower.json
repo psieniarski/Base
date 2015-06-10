@@ -1,0 +1,26 @@
+{
+  "name": "jaskier",
+  "version": "0.1.0",
+  "homepage": "https://github.com/psieniarski/JaSkier",
+  "authors": [
+    "Pawel Sieniarski <paabson@gmail.com>"
+  ],
+  "description": "tiny js framework",
+  "keywords": [
+    "js",
+    "javascript",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "mocha": "~2.2.5",
+    "chai": "~3.0.0"
+  }
+}
