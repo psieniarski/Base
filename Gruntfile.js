@@ -29,10 +29,9 @@ module.exports = function(grunt) {
     copy: {
       vendor: {
         files: [
-          // includes files within path
-          { src: ['bower_components/mocha/*'], dest: 'vendor/mocha' },
-          { src: ['bower_components/chai/*'], dest: 'vendor/chai' },
-          { src: ['node_modules/jquery/dist/*'], dest: 'vendor/jquery' },
+          {expand: true, cwd: 'bower_components/mocha/', src: ['**'], dest: 'vendor/mocha/'},
+          {expand: true, cwd: 'bower_components/chai/', src: ['**'], dest: 'vendor/chai/'},
+          {expand: true, cwd: 'node_modules/jquery/dist', src: ['**'], dest: 'vendor/jquery/'},
         ],
       },
     }
