@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/psieniarski/JaSkier/issues"
   },
-  "homepage": "https://github.com/psieniarski/JaSkier"
+  "homepage": "https://github.com/psieniarski/JaSkier",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.8.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.4.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
 }
