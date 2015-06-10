@@ -1,5 +1,5 @@
 /*
- * Base - mini framework 
+ * JaSkier - mini js framework 
  * Copyright 2015, Paweł Sieniarski 
  *
  * Licensed under the MIT license:
@@ -115,11 +115,7 @@ Base.prototype = $.extend({}, helper, {
     }
 });
 
-var Component = Base.extend({}); 
-Component.extend = Base.extend;
-
 module.exports = {
-    Base: Base,
-    Component: Component
+    Jaskier: Jaskier
 }; 
 
