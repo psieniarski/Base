@@ -21,7 +21,7 @@
         root.Jaskier = factory(root.$);
     }
 }(this, function ($) {
-    var Jaskier = {}; 
+    var Jaskier = function() {}; 
 
     // helper functions
     var helper = {
@@ -51,16 +51,17 @@
         },
     };
 
-    Jaskier.extend = function(obj) {
+    Jaskier.extend = function(prototypeObj, instanceObj) {
         var that = this;
 
         // inherit after Jaskier Constructor
         var Child = function() {
             that.apply(this, arguments); 
+            $.extend(this, instanceObj); 
         };
 
         // copy from Jaskier prototype and from obj 
-        Child.prototype = $.extend({}, that.prototype, obj);
+        Child.prototype = $.extend({}, that.prototype, prototypeObj);
 
         return Child;
     };
