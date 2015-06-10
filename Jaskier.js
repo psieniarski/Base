@@ -33,7 +33,7 @@ var helper = {
     },
 };
 
-Base.extend = function(obj) {
+Jaskier.extend = function(obj) {
     var that = this;
     var Child = function() {
         that.apply(this, arguments); 
@@ -44,7 +44,7 @@ Base.extend = function(obj) {
     return Child;
 };
 
-Base.prototype = $.extend({}, helper, {
+Jaskier.prototype = $.extend({}, helper, {
     currentBreakpoint: '',
 
     _prepareUI: function() {
