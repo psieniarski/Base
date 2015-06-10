@@ -22,13 +22,17 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+      vendor: ['vendor']
+    },
+
     copy: {
       vendor: {
         files: [
           // includes files within path
-          {expand: true, src: ['bower_components/mocha/*'], dest: 'vendor/mocha'},
-          {expand: true, src: ['bower_components/chai/*'], dest: 'vendor/chai'},
-          {expand: true, src: ['node_modules/jquery/dist/*'], dest: 'vendor/jquery'},
+          { src: ['bower_components/mocha/*'], dest: 'vendor/mocha' },
+          { src: ['bower_components/chai/*'], dest: 'vendor/chai' },
+          { src: ['node_modules/jquery/dist/*'], dest: 'vendor/jquery' },
         ],
       },
     }
@@ -39,6 +43,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-browserify');
   grunt.loadNpmTasks('grunt-notify');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('default', ['copy', 'watch']);
+  grunt.registerTask('default', ['clean', 'copy', 'watch']);
 };
