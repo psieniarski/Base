@@ -54,9 +54,10 @@
     Jaskier.extend = function(prototypeObj, instanceObj) {
         var that = this;
 
-        // inherit after Jaskier Constructor
         var Child = function() {
+            // inherit after Jaskier Constructor
             that.apply(this, arguments); 
+            // add instanceObj props
             $.extend(this, instanceObj); 
         };
 
