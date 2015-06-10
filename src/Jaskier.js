@@ -18,10 +18,10 @@
         module.exports = factory(require('jquery'));
     } else {
         // Browser globals (root is window)
-        root.returnExports = factory(root.b);
+        root.returnExports = factory(root.$);
     }
 }(this, function ($) {
-    
+    // helper functions
     var helper = {
         once: function(fn, cx) { 
             var result;
@@ -36,6 +36,8 @@
             };
         },
 
+        // ex. CamelCase('a','b','c') 
+        // return aBc
         camelCase: function() {
             var args = [].slice.call(arguments);
 
