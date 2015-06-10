@@ -1,0 +1,24 @@
+{
+  "name": "jaskier",
+  "version": "0.1.0",
+  "description": "Tiny js framework",
+  "main": "Jaskier.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psieniarski/JaSkier.git"
+  },
+  "keywords": [
+    "js",
+    "framework",
+    "javascript"
+  ],
+  "author": "Pawel Sieniarski <paabson@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/psieniarski/JaSkier/issues"
+  },
+  "homepage": "https://github.com/psieniarski/JaSkier"
+}
