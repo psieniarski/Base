@@ -1,5 +1,5 @@
 # JaSkier
-Tiny js framework
+Tiny JavaScript framework
 
 Works well with *browserify*.
 
