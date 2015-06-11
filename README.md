@@ -1,4 +1,4 @@
-# JaSkier
+# Jaskier
 Tiny JavaScript framework
 
 Works well with *browserify*.
