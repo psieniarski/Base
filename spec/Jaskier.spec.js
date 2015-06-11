@@ -15,21 +15,20 @@ describe('Jaskier', function() {
 	 	});
  	});
 
- 	describe('New object created by extend method', function() {
-		it('should have extended instance', function() {
-	 		var J = Jaskier.extend({}, { a: 5 }); 
+ 	describe('extend method', function() {
+ 		var J, j; 
 
-	 		var j = new J();
-	 		
+ 		beforeEach(function(){
+ 			J = Jaskier.extend({b: 1}, { a: 5 }); 
+ 			j = new J();
+ 		});
+
+		it('should allow to extend instance', function() {	
 	 		assert.equal(j.a, 5);
 		});
 
-		it('should have extended prototype', function() {
-	 		var J = Jaskier.extend({ b: 5 }, { a: 5 }); 
-
-	 		var j = new J();
-	 		
-	 		assert.equal(j.b, 5);
+		it('should allow to extend prototype', function() {
+	 		assert.equal(j.b, 1);
 		});
 	});
 });
