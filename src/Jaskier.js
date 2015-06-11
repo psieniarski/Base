@@ -23,17 +23,17 @@
 }(this, function ($) {
     
     var Jaskier = function() {
-    	if (this.el) {
-    		this.$el = $(this.el);  
-    	}
-    	
-    	this.ui && this._prepareUI(); 	
-    	this.events && this._bindEvents();
-    	this.breakpoints && this._prepareBreakpoints();
-    	
-    	if (typeof this.init == 'function') {
-    		this.init(); 
-    	}
+        if (this.el) {
+            this.$el = $(this.el);  
+        }
+        
+        this.ui && this._prepareUI();   
+        this.events && this._bindEvents();
+        this.breakpoints && this._prepareBreakpoints();
+        
+        if (typeof this.init == 'function') {
+            this.init(); 
+        }
     };
 
     // helper functions
