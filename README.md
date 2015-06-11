@@ -31,7 +31,7 @@ page.ui.navbar // and here
 	},
 
 	events: {
-		'@button click': 'buttonClicked'
+		'click @button': 'buttonClicked'
 	},
 
 	buttonClicked: function() {}  
