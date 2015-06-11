@@ -21,6 +21,7 @@
         root.Jaskier = factory(root.$);
     }
 }(this, function ($) {
+    
     var Jaskier = function() {
     	if (this.el) {
     		this.$el = $(this.el);  
