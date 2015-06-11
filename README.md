@@ -4,6 +4,17 @@ Tiny JavaScript framework
 Works well with *browserify*.
 
 
+## Initialize function 
+```js
+var Page = Jaskier.extend({
+	init: function() {
+		console.log('init');
+	}
+});
+
+```
+
+
 ## UI hash
 ```js
 var Page = Jaskier.extend({
@@ -22,6 +33,18 @@ var page = new Page();
 page.ui.navbar // and here
 
 ```
+
+### Relative to element
+```js
+var Page = Jaskier.extend({
+	el: $('#page'),
+	ui: {
+		button: '.button' // if el exist, button must be child of el
+	}
+});
+
+```
+
 
 ## DOM events
 ```js

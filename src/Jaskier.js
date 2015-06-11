@@ -1,5 +1,5 @@
 /*
- * JaSkier - mini js framework 
+ * Jaskier - mini js framework 
  * Copyright 2015, Paweł Sieniarski 
  *
  * Licensed under the MIT license:
