@@ -39,4 +39,20 @@ page.ui.navbar // and here
 
 ```
 
+## Breakpoints
+```js
+var Page = Jaskier.extend({
+	breakpoints: {
+		// CSS media queries style 
+		mobile: '(max-width: 767px)',
+		tablet: '(min-width: 768px) and (max-width: 1090px)'
+	},
+
+	mobile: function() {},       // call when mobile breakpoint match  
+	notMobile: function() {},    // call when mobile breakpoint unmatch
+	tablet: function() {},		 // call when tablet breakpoint match 
+	notTablet: function() {}     // call when mobile breakpoint unmatch
+});	
+```
+
 Inspired by Marionette (http://marionettejs.com)
