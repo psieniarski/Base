@@ -23,13 +23,12 @@ page.ui.navbar // and here
 
 ```
 
-```js
-
 ### Relative to element
+```js
 var Page = Jaskier.extend({
 	el: $('#page'),
 	ui: {
-		button: '.button' // if el is defined, button must be child of el
+		button: '.button' // if el exist, button must be child of el
 	}
 });
 
