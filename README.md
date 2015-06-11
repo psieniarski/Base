@@ -4,6 +4,17 @@ Tiny JavaScript framework
 Works well with *browserify*.
 
 
+## Initialize function 
+```js
+var Page = Jaskier.extend({
+	init: function() {
+		console.log('init');
+	}
+});
+
+```
+
+
 ## UI hash
 ```js
 var Page = Jaskier.extend({
@@ -33,8 +44,6 @@ var Page = Jaskier.extend({
 });
 
 ```
-
-
 
 
 ## DOM events
