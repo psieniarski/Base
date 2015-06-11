@@ -23,7 +23,7 @@ page.ui.navbar // and here
 
 ```
 
-## Events
+## DOM events
 ```js
   var Page = Jaskier.extend({
 	ui: {
